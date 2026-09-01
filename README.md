@@ -1,163 +1,85 @@
 # weather-prediction-ml
 Weather prediction using machine learning algorithms as part of an L&TEduTech project, implementing KNN, SVM, Gradient Boosting, and XGBoost.
-# 🌦️ Weather Prediction Using Machine Learning
+# Weather Prediction Using Machine Learning
 
-A machine learning project for predicting weather conditions using the
-Seattle Weather Dataset. This project was developed as part of the
-**L&T EduTech** program and focuses on implementing and comparing
-multiple classification algorithms.
+This project was developed as part of the **L&T EduTech** program.
 
----
+The project uses machine learning algorithms to predict weather conditions using the **Seattle Weather Dataset**.
 
-## 📌 Project Overview
+## Objective
 
-Weather prediction plays an important role in areas such as agriculture,
-transportation, and daily activities. Machine learning can be used to
-analyze historical weather data and identify patterns that help predict
-weather conditions.
+- Analyze the Seattle Weather Dataset
+- Preprocess the data
+- Apply different machine learning algorithms
+- Compare their performance
+- Identify the best-performing model
 
-In this project, four machine learning algorithms were implemented and
-compared:
+## Dataset
+
+The Seattle Weather Dataset contains 1461 records with the following features:
+
+- Date
+- Precipitation
+- Maximum Temperature
+- Minimum Temperature
+- Wind
+- Weather
+
+The target variable is **Weather**.
+
+## Machine Learning Algorithms
+
+The following algorithms were used:
 
 - K-Nearest Neighbors (KNN)
 - Support Vector Machine (SVM)
 - Gradient Boosting
 - XGBoost
 
-The models were evaluated using classification metrics and their
-prediction accuracy was compared to identify the best-performing model.
+## Data Preprocessing
 
----
+- Removed the Date column
+- Applied Label Encoding to weather labels
+- Applied feature scaling
+- Split the data into training and testing sets
 
-## 🎯 Objectives
-
-- Analyze the Seattle Weather Dataset
-- Preprocess and clean the weather data
-- Implement multiple machine learning classification algorithms
-- Compare the performance of different models
-- Identify the best-performing model for weather prediction
-
----
-
-## 📊 Dataset
-
-**Dataset:** Seattle Weather Dataset
-
-The dataset contains **1,461 records** and the following attributes:
-
-| Feature | Description |
-|---|---|
-| Date | Date of the observation |
-| Precipitation | Amount of precipitation |
-| Maximum Temperature | Maximum recorded temperature |
-| Minimum Temperature | Minimum recorded temperature |
-| Wind | Wind measurement |
-| Weather | Weather condition |
-
-### Target Variable
-
-`Weather`
-
-The target represents the weather condition to be predicted.
-
----
-
-## 🔧 Data Preprocessing
-
-The following preprocessing steps were performed:
-
-1. Removed the `Date` column.
-2. Converted weather labels into numerical values using Label Encoding.
-3. Applied feature scaling.
-4. Split the dataset into training and testing datasets.
-
----
-
-## 🤖 Machine Learning Models
-
-### 1. K-Nearest Neighbors (KNN)
-
-KNN classifies a data point based on the classes of its nearest
-neighboring data points.
-
-### 2. Support Vector Machine (SVM)
-
-SVM finds an optimal decision boundary for separating different classes.
-
-### 3. Gradient Boosting
-
-Gradient Boosting combines multiple weak learners sequentially to
-build a stronger predictive model.
-
-### 4. XGBoost
-
-XGBoost is an optimized gradient boosting algorithm designed for
-efficient and accurate machine learning.
-
----
-
-## 📈 Results
-
-The models were evaluated based on their prediction accuracy.
+## Results
 
 | Algorithm | Accuracy |
-|---|---:|
+|-----------|----------|
 | KNN | 69.62% |
 | SVM | 78.50% |
-| Gradient Boosting | **83.28%** |
+| Gradient Boosting | 83.28% |
 | XGBoost | 81.91% |
 
-### 🏆 Best Performing Model
+**Gradient Boosting achieved the highest accuracy of 83.28%.**
 
-**Gradient Boosting** achieved the highest reported accuracy of
-**83.28%** among the four models.
+## Technologies Used
 
-The model performed particularly well for the **rain** and **sunny**
-weather classes. The lower performance for **drizzle** and **snow**
-was attributed to the smaller number of samples in those classes.
+- Python
+- Jupyter Notebook
+- Pandas
+- NumPy
+- Scikit-learn
+- XGBoost
+- Matplotlib
+- Seaborn
 
----
+## Project Files
 
-## 📋 Evaluation Metrics
+- `weather_prediction.ipynb` - Jupyter Notebook containing the complete implementation
+- `seattle-weather.xls` - Dataset used for the project
+- `WEATHER PREDICTION USING MACHINE LEARNING ALGORITHMS.pdf` - Project report
 
-The project evaluates model performance using:
+## Future Scope
 
-- Accuracy
-- Precision
-- Recall
-- F1-Score
-- Confusion Matrix
+- Use larger weather datasets
+- Include additional features such as humidity and pressure
+- Apply deep learning models
+- Develop a real-time weather prediction system
 
-The confusion matrix is used to visualize the classification
-performance of the models.
+## Author
 
----
+**Pooja Sree**
 
-## 🛠️ Technologies Used
-
-- **Python**
-- **Jupyter Notebook**
-- **Pandas**
-- **NumPy**
-- **Scikit-learn**
-- **XGBoost**
-- **Matplotlib**
-- **Seaborn**
-
----
-
-## 📁 Project Structure
-
-```text
-weather-prediction-ml/
-│
-├── data/
-│   └── seattle-weather.xls
-│
-├── notebooks/
-│   └── weather_prediction.ipynb
-│
-├── report/
-│   └── WEATHER PREDICTION USING MACHINE LEARNING ALGORITHMS.pdf
-│
-└── README.md
+B.Tech CSE - Artificial Intelligence and Machine Learning
